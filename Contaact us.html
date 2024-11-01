@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Bloom Flower Boutique</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-side">
+                <nav class="header-menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html" class="active">Contact us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h1>Contact us</h1>
+            <p>”We’d love to hear from you! Whether you have questions about our bouquets,<br>need help with an order, or just want to say hello,<br>please don’t hesitate to reach out to us.”</p>
+            <ul>
+                <li><strong>Office:</strong> 143 Blossom Street, Santa Barbara, Western Visayas, Philippines.</li>
+                <li><strong>Phone:</strong> +63 123456789</li>
+                <li><strong>Email:</strong> annky5334@gmail.com</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2>Send a message</h2>
+            <form>
+                <label for="first">Name</label>
+                <input type="text" id="first" name="first" placeholder="First Name">
+                <input type="text" id="last" name="last" placeholder="Last Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+                <label for="message">Comment or Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d4c1c2;
+    color: #4e3a3c;
+    transition: all 0.3s ease;
+}
+.container {
+        display: flex;
+        flex-direction: row;
+        transition: all 0.3s ease;
+}
+.header-menu {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.header-menu a {
+    margin-top: 15.7%;
+    text-decoration: none;
+    color: #eeebeb;
+    transition: all 0.3s ease;
+}
+.header-menu a.active {
+    text-decoration: underline overline;
+    color: #7a3e50;
+}
+.header-menu a:hover {
+    color: #8a4d5e;
+}
+.left-side {
+    width: 50%;
+    background-color: #d4c1c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+.contact-info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.3vw;
+    letter-spacing: 1.3px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+}
+.contact-info h1 {
+    margin-bottom: 10%;
+    font-size: 5vw;
+    color: #be8ca9;
+    transition: all 0.3s ease;
+}
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+.contact-form {
+    flex: 1;
+}
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side, .contact-section {
+        width: 100%;
+        text-align: center;
+    }
+    .header-menu {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .header-menu a {
+        margin: 57px 0;
+        font-size: 3vw;
+    }
+    .contact-info {
+        font-size: 3vw;
+    }
+    .contact-info h1 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-menu a {
+        font-size: 6vw;
+    }
+    .contact-info {
+        font-size: 4vw;
+    }
+    .contact-info h1 {
+        font-size: 9vw;
+    }
+}
+</style>

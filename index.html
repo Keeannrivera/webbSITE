@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Bloom Flower Boutique</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <nav class="header-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Contaact us.html">Contact us</a>
+            </nav>
+            <h1>Pretty Bloom Flower Boutique</h1>
+            <p>YOUR WISHES IN OUR HANDS</p>
+            <button><a href="shop.html" class="button">SHOP NOW</a></button>
+        </div>
+
+        <div class="right-side"></div>
+    </div>
+
+</body>
+</html>
+<style>
+    body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #d4c1c2;
+            color: #4e3a3c;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            height: 100vh;
+            transition: all 0.3s ease;
+        }
+
+        .left-side {
+            width: 50%;
+            background-color: #d4c1c2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .left-side h1 {
+            margin-left: 15px;
+            font-size: 5vw;
+            font-family: 'Brush Script MT', cursive;
+            background: -webkit-linear-gradient(rgb(182, 79, 173), rgb(207, 118, 118));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .left-side p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 1.5vw;
+            margin-bottom: 30px;
+            color: #f1efef;
+            transition: all 0.3s ease;
+        }
+
+        .left-side button {
+            padding: 10px 20px;
+            font-size: 1.2vw;
+            background-color: #8a4d5e;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .left-side button:hover {
+            background-color: #7a3e50;
+        }
+
+        .right-side {
+            width: 50%;
+            background-image: url('BG.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.3s ease;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        button a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: #f317b11c
+        }
+
+        .button:active {
+            background-color: #9e5d8886;
+            box-shadow: 0 5px #ff16c53d;
+            transform: translateY(7px);
+        }
+
+        .header-menu {
+            display: flex;
+            gap: 20px;
+            font-weight: bold;
+            margin-bottom: 14%;
+            justify-content: center;
+            font-size: 1.3vw;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .header-menu a {
+            text-decoration: none;
+            color: #eeebeb;
+            transition: all 0.3s ease;
+        }
+        
+        .header-menu a.active {
+            text-decoration: underline overline;
+            color: #7a3e50;
+        }
+
+        .header-menu a:hover {
+            color: #8a4d5e;
+        }
+
+        @media (max-width: 1000px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .left-side, .right-side {
+                width: 100%;
+            }
+
+            .header-menu {
+                flex-direction: row;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .header-menu a {
+                margin-top: 60px;
+                font-size: 3vw;
+            }
+
+            .left-side h1 {
+                font-size: 10vw;
+            }
+
+            .left-side p {
+                font-size: 4vw;
+            }
+
+            .left-side button {
+                font-size: 4vw;
+            }
+
+            .right-side {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-position: center;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                position: absolute;
+            }
+        }
+</style>
